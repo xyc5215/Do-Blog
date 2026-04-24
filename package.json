@@ -1,0 +1,27 @@
+{
+  "name": "doblog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute cf-blog-db --local --file=schema.sql",
+    "db:seed": "wrangler d1 execute cf-blog-db --local --file=seed.sql",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "hono": "^4.12.14",
+    "markdown-it": "^14.1.1",
+    "markdown-it-anchor": "^9.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.14.7",
+    "@cloudflare/workers-types": "^4.20260418.1",
+    "@types/markdown-it": "^14.1.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4",
+    "wrangler": "^4.83.0"
+  }
+}
