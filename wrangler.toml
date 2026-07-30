@@ -9,11 +9,11 @@ BLOG_ENV = "production"
 [[d1_databases]]
 binding = "DB"
 database_name = "cf-blog-db"
-database_id = "<YOUR_D1_DATABASE_ID>"
+database_id = "59fb365f-7b4f-4da5-8230-cae583e661dd"
 
 [[kv_namespaces]]
 binding = "BLOG_KV"
-id = "<YOUR_KV_NAMESPACE_ID>"
+id = "a5011e4c83b54c6e90d87c1055b9d12f"
 
 [triggers]
 crons = ["*/5 * * * *"]
